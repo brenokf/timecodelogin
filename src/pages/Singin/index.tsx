@@ -51,6 +51,7 @@ const Singin: React.FC = () => {
       </Form1>
       <Form2>
         <input
+        type = "password"
           value={InputPass}
           onChange={(e) => setInputPass(e.target.value)}
           placeholder="Enter Password"
