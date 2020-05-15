@@ -3,47 +3,50 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Layout = styled.form`
+
   position: absolute;
-  width: 1280px;
-  height: 715px;
-  left: 300px;
-  top: 90px;
+  width: 1100px;
+  height: 550px;
+  left: 251px;
+  top: 50px;
 
   background: #f5f5f5;
+
+
 `;
 
-export const Side = styled.image`
+export const Side = styled.form`
   position: absolute;
-  width: 751px;
-  height: 717px;
-  left: 301px;
-  top: 90px;
+left: 17.43%;
+right: 40.57%;
+top: 7.50%;
+bottom: 20.7%;
+
 `;
 
 export const Logo = styled.image`
   position: absolute;
   width: 582.25px;
   height: 289.17px;
-  left: 350.21px;
-  top: 280.95px;
+  left: 310.21px;
+  top: 180.95px;
 `;
 
 export const Title = styled.h1`
   position: absolute;
   width: 376px;
-  left: 65.62%;
+  left: 75.0%;
   right: 21.25%;
-  top: 32.32%;
-  bottom: 62.21%;
+  top: 25.32%;
+  bottom: 52.21%;
 
+  color: rgba(0, 0, 0, 0.2);
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: 0.26em;
-
-  color: rgba(0, 0, 0, 0.49);
 `;
 
 export const Form1 = styled.form`
@@ -51,23 +54,24 @@ export const Form1 = styled.form`
     position: absolute;
     width: 376px;
     height: 43px;
-    left: 1110px;
-    top: 400px;
+    left: 940px;
+    top: 300px;
     padding: 16px 32px;
-    color:gray;
+    color: #b7b7b7;
 
-    border: 1px solid #cfcece;
+
+    border: 1px solid rgba(207, 206, 206, 0.89);
     box-sizing: border-box;
     border-radius: 100px;
+  }
 
-    ::-webkit-input-placeholder {
-      color: #bebcbc;
-    }
+  ::-webkit-input-placeholder {
+    color: #bebcbc;
+  }
 
-    input:-moz-placeholder,
-    textarea:-moz-placeholder {
-      color: #bebcbc;
-    }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {
+    color: #bebcbc;
   }
 `;
 
@@ -76,10 +80,10 @@ export const Form2 = styled.form`
     position: absolute;
     width: 376px;
     height: 43px;
-    left: 1110px;
-    top: 470px;
+    left: 940px;
+    top: 370px;
     padding: 16px 32px;
-    color:gray;
+    color: #b7b7b7;
 
     border: 1px solid rgba(207, 206, 206, 0.89);
     box-sizing: border-box;
@@ -101,8 +105,8 @@ export const Button = styled.form`
     position: absolute;
     width: 376px;
     height: 45px;
-    left: 1110px;
-    top: 570px;
+    left: 940px;
+    top: 480px;
 
     background: #0081f8;
     border: 1px solid #6e92ef;
@@ -131,17 +135,14 @@ export const Button = styled.form`
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
     border-radius: 100px;
-
-
-
   }
 `;
 export const Nconta = styled.form`
   position: absolute;
   width: 134px;
   height: 21px;
-  left: 1110px;
-  top: 650px;
+  left: 940px;
+  top: 550px;
 
   font-family: Roboto;
   font-style: normal;
@@ -155,7 +156,6 @@ export const Nconta = styled.form`
     color: #0081f8;
     text-decoration: none;
 
-    -webkit-box-shadow: 5px;
     border-radius: 5px;
 
     -webkit-animation-duration: 0.5s;
@@ -174,8 +174,8 @@ export const Fpassword = styled.form`
   position: absolute;
   width: 180px;
   height: 21px;
-  left: 1350px;
-  top: 650px;
+  left: 1180px;
+  top: 550px;
 
   font-family: Roboto;
   font-style: normal;
@@ -189,7 +189,6 @@ export const Fpassword = styled.form`
     color: #0081f8;
     text-decoration: none;
 
-    -webkit-box-shadow: 5px;
     border-radius: 5px;
 
     -webkit-animation-duration: 0.5s;
@@ -203,4 +202,10 @@ export const Fpassword = styled.form`
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
   }
+`;
+
+export const Error = styled.span`
+  display: block;
+  color: #c53030;
+  margin-top: 8px;
 `;

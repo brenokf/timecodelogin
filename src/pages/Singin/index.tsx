@@ -12,9 +12,24 @@ import {
   Nconta,
   Fpassword,
   Logo,
+  Error,
 } from './styles';
 const Singin: React.FC = () => {
   const [inputError, setInputError] = useState('');
+  const [InputEmail, setInputEmail] = useState('');
+  const [InputPass, setInputPass] = useState('');
+
+  async function ErrorAplication(event: FormEvent<HTMLFontElement>) {
+    event.preventDefault();
+
+    if (InputEmail === '' || InputPass === '') {
+      setInputError('Enter your email and password');
+      return;
+    }
+    setInputEmail('');
+    setInputPass('');
+    setInputError('');
+  }
   return (
     <>
       <Layout />
@@ -22,21 +37,31 @@ const Singin: React.FC = () => {
         <img src={logoside} alt="logo side" />
       </Side>
       <Logo>
-        <img src={logotimecode}  alt="logo time code"/>
+        <img src={logotimecode} alt="logo time code" />
       </Logo>
 
       <Title> LOGIN </Title>
       <Form1>
-        <input type="text" id="email" placeholder  ="Enter Email" />
+        <input
+          value={InputEmail}
+          onChange={(e) => setInputEmail(e.target.value)}
+          placeholder="Enter Email"
+          required
+        />
       </Form1>
       <Form2>
-        <input type="password" id="password" placeholder="Enter Password" />
+        <input
+          value={InputPass}
+          onChange={(e) => setInputPass(e.target.value)}
+          placeholder="Enter Password"
+          required
+        />
       </Form2>
 
       <Button>
         <button type="submit"> Login </button>
       </Button>
-
+      {inputError && <Error>{inputError}</Error>}
       <Nconta>
         <a href="register">No account</a>
       </Nconta>
