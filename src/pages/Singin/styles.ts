@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Layout = styled.form`
-
   position: absolute;
   width: 1100px;
   height: 550px;
@@ -11,17 +10,14 @@ export const Layout = styled.form`
   top: 50px;
 
   background: #f5f5f5;
-
-
 `;
 
 export const Side = styled.form`
   position: absolute;
-left: 17.43%;
-right: 40.57%;
-top: 7.50%;
-bottom: 20.7%;
-
+  left: 17.43%;
+  right: 40.57%;
+  top: 7.5%;
+  bottom: 20.7%;
 `;
 
 export const Logo = styled.image`
@@ -35,7 +31,7 @@ export const Logo = styled.image`
 export const Title = styled.h1`
   position: absolute;
   width: 376px;
-  left: 75.0%;
+  left: 75%;
   right: 21.25%;
   top: 25.32%;
   bottom: 52.21%;
@@ -57,21 +53,27 @@ export const Form1 = styled.form`
     left: 940px;
     top: 300px;
     padding: 16px 32px;
-    color: #b7b7b7;
+    color: #848484;
+    font-family: 'Poppins', sans-serif;
 
+    &:hover{
+      outline: none !important;
+    border:3px solid #00B2FF;
+    box-shadow: 0 0 10px #CBCBCB;
+    }
 
-    border: 1px solid rgba(207, 206, 206, 0.89);
+    border: 1px solid #CBCBCB;
     box-sizing: border-box;
     border-radius: 100px;
-  }
 
-  ::-webkit-input-placeholder {
-    color: #bebcbc;
-  }
+    ::-webkit-input-placeholder {
+      color: #848484;
+    }
 
-  input:-moz-placeholder,
-  textarea:-moz-placeholder {
-    color: #bebcbc;
+    input:-moz-placeholder,
+    textarea:-moz-placeholder {
+      color: #bebcbc;
+    }
   }
 `;
 
@@ -83,20 +85,29 @@ export const Form2 = styled.form`
     left: 940px;
     top: 370px;
     padding: 16px 32px;
-    color: #b7b7b7;
+    color: #848484;
+    transition: 0.5;
 
-    border: 1px solid rgba(207, 206, 206, 0.89);
+    &:hover{
+      outline: none !important;
+    border:3px solid #00B2FF;
+    box-shadow: 0 0 10px #CBCBCB;
+    }
+
+    border: 1px solid #CBCBCB;
+
     box-sizing: border-box;
     border-radius: 100px;
 
     ::-webkit-input-placeholder {
-      color: #bebcbc;
+      color: #848484;
     }
 
     input:-moz-placeholder,
     textarea:-moz-placeholder {
       color: #bebcbc;
     }
+
   }
 `;
 
@@ -168,6 +179,10 @@ export const Nconta = styled.form`
 
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: #0058a9;
   }
 `;
 export const Fpassword = styled.form`
@@ -201,6 +216,10 @@ export const Fpassword = styled.form`
 
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: #0058a9;
   }
 `;
 
