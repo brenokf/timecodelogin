@@ -43,6 +43,7 @@ const Singin: React.FC = () => {
       <Title> LOGIN </Title>
       <Form1>
         <input
+          type="Text"
           value={InputEmail}
           onChange={(e) => setInputEmail(e.target.value)}
           placeholder="Enter Email"
@@ -51,7 +52,7 @@ const Singin: React.FC = () => {
       </Form1>
       <Form2>
         <input
-        type = "password"
+          type="password"
           value={InputPass}
           onChange={(e) => setInputPass(e.target.value)}
           placeholder="Enter Password"
